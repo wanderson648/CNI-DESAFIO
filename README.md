@@ -31,4 +31,30 @@ Spring Boot foi escolhido pela sua rapidez na criação de APIs REST, facilidade
 Linux/macOS:
 ```bash
 export GOOGLE_CREDENTIALS_PATH=/caminho/para/google-credentials.json
+````
 
+### 2. Configurar o application.properties
+
+```bash
+  google.credentials.path=${GOOGLE_CREDENTIALS_PATH}
+  server.port=8080
+```
+
+### 3. Rodar a aplicação
+ ```bash
+  mvn clean spring-boot:run
+  A aplicação estará disponível em http://localhost:8080.
+```
+
+### 4. Exemplos de Chamadas aos Endpoints
+```bash
+  curl -X GET http://localhost:8080/api/tickets
+  
+  curl -X POST http://localhost:8080/api/tickets \
+  -H "Content-Type: application/json" \
+  -d '{"titulo": "Problema no sistema", "descricao": "Erro ao enviar formulário"}'
+  
+  curl -X PUT http://localhost:8080/api/tickets/{id} \
+  -H "Content-Type: application/json" \
+  -d '{"status": "CONCLUIDO"}'
+```
