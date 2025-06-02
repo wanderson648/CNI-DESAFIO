@@ -37,6 +37,16 @@ export GOOGLE_CREDENTIALS_PATH=/caminho/para/google-credentials.json
 ```bash
   google.credentials.path=${GOOGLE_CREDENTIALS_PATH}
   server.port=8080
+
+  # DATA SOURCE -> POSTGRES
+  spring.datasource.url=jdbc:postgresql://localhost:5432/tickets-api
+  spring.datasource.driver-class-name=org.postgresql.Driver
+  spring.datasource.username=${DB_USERNAME}
+  spring.datasource.password=${DB_PASSWORD}
+  
+  # JPA/HIBERNATE
+  spring.jpa.show-sql=true
+  spring.jpa.hibernate.ddl-auto=update
 ```
 
 ### 3. Rodar a aplicação
