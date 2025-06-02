@@ -11,7 +11,7 @@ Projeto backend desenvolvido em **Java com Spring Boot**, que integra com APIs e
 - **Java 17+**: linguagem robusta e amplamente utilizada em sistemas corporativos.
 - **Spring Boot**: framework para desenvolvimento rápido de aplicações web e APIs REST.
 - **Google Cloud Natural Language API**: análise de sentimentos em textos dos chamados.
-- **Git + GitHub**: versionamento e segurança com Push Protection para evitar exposição de segredos.
+- **Git + GitHub**: versionamento de códigos.
 - **Maven**: gerenciamento de dependências e build.
 
 **Justificativa da tecnologia**:  
