@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Projeto backend desenvolvido em **Java com Spring Boot**, que integra com APIs externas e possui proteção contra exposição de segredos sensíveis (ex: credenciais Google Cloud). A aplicação oferece endpoints REST para criação e consulta de chamados, além de analisar sentimentos via Google Cloud Natural Language API.
+Projeto backend desenvolvido em **Java com Spring Boot**, que integra com APIs externas. A aplicação oferece endpoints REST para criação e consulta de chamados, além de analisar sentimentos via Google Cloud Natural Language API.
 
 ---
 
