@@ -37,15 +37,14 @@ class TicketControllerTest {
 
         String json = objectMapper.writeValueAsString(requestDTO);
 
-        // Act & Assert
-//        mockMvc.perform(post("/api/tickets")
-//                        .contentType(MediaType.APPLICATION_JSON)
-//                        .contentType(json))
-//                .andExpect(status().isCreated())
-//                .andExpect(jsonPath("$.id").exists())
-//                .andExpect(jsonPath("$.titulo").value("Erro na tela"))
-//                .andExpect(jsonPath("$.descricao").value("A tela trava ao clicar no botão de salvar"))
-//                .andExpect(jsonPath("$.categoria").value("Usabilidade"))
-//                .andExpect(jsonPath("$.sentimento").value("NEGATIVE"));
+        mockMvc.perform(post("/api/tickets")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .contentType(json))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.id").exists())
+                .andExpect(jsonPath("$.titulo").value("Erro na tela"))
+                .andExpect(jsonPath("$.descricao").value("A tela trava ao clicar no botão de salvar"))
+                .andExpect(jsonPath("$.categoria").value("Usabilidade"))
+                .andExpect(jsonPath("$.sentimento").value("NEGATIVE"));
     }
 }
